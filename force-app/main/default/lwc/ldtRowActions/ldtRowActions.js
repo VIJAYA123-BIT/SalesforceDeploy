@@ -122,7 +122,7 @@ export default class LdtRowActions extends NavigationMixin(LightningElement) {
     delSelectedAccs({lstAccIds: currentRow}).then(result => {
         window.console.log('result ====> ' + result);
         this.showLoadingSpinner = false;
-        this.dispatchEvent(new ShowToastEvent({
+        this.dispatchEvent(new ShowToastEvent({  
             title: 'Success!!',
             message: currentRow +' Account deleted.',
             variant: 'success'

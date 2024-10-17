@@ -32,7 +32,7 @@ public with sharing class PrintRecords {
         system.debug('the length of ac is '+ acb.size());
         delete acb;
         list<Account> achb = [select id , Name from Account where id =: lstAccIds];
-        system.debug('deleted successfully');
+        system.debug('deleted successfully'); 
         system.debug('the length of ac is '+ achb.size());
         // list<Account> ajc=[select Id ,Name, Industry, Phone from Account where Industry!= null and Phone != null  Order by CreatedDate DESC limit 10];
         // system.debug('the data is shifted'+ ajc);
